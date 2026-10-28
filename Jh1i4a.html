@@ -1,0 +1,97 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<script type="text/javascript" src="../functions.js"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script> 			const sP3d10 = [ [ "0", "프로그램 시작" ], [ "8", "-목표 지점에 도착할 때까지 상하좌우로 한 칸씩 이동해 보기" ], [ "6", "--현재 위치가 목표 지점이면 길 찾기 종료" ], [ "3", "프로그램 종료" ], [ "4", "미로 맵에서 길 찾는 함수" ], [ "7", "--현재 위치가 아직 지나가지 않은 길이면 지나간 흔적을 남기기" ], [ "1", "-캐릭터 현재 위치를 입력받기" ], [ "5", "-먼저 현재 위치를 확인" ], [ "2", "-미로 맵에서 길 찾기" ], 							]; 		</script> 	</head> 	<body onload='sP3f3();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li><ul><li><a href='../Jh1i/Jh1i1.html'>합계 Σ 계산</a></li><li><a href='../Jh1i/Jh1i2.html'>factorial 계산</a></li><li><a href='../Jh1i/Jh1i3.html'>10진수 2진수 변환</a></li><li><a href='../Jh1i/Jh1i4.html'>미로 탐색</a></li><ul><li><a href='Jh1i4.html'>코드읽기</a></li><li><a href='Jh1i4s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter21/MazeMove.java' target='code'>소스코드</a></li></ul><li><a href='../Jh1i/Jh1i5.html'>하노이 탑</a></li></ul></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>미로를 탐색해서 문을 찾아 탈출하는 문제입니다 이를 해결하는 방법을 아래 참고자료에서 한줄씩 복붙해서 설명하세요 </pre> 				<pre class='selectable'>캐릭터 현재 위치의 줄 번호를 입력하세요: <b><span style='color:rgb(0,0,255);'>3</span></b>
+캐릭터 현재 위치의 칸 번호를 입력하세요: <b><span style='color:rgb(0,0,255);'>5</span></b>
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>옷<span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>        옷<span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          옷
+<span style='font-family:monospace;background-color:skyblue'>              </span></div>미로 맵 탈출 성공! 
+</pre><br><pre class='selectable'>캐릭터 현재 위치의 줄 번호를 입력하세요: <b><span style='color:rgb(0,0,255);'>1</span></b>
+캐릭터 현재 위치의 칸 번호를 입력하세요: <b><span style='color:rgb(0,0,255);'>1</span></b>
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>옷    <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>옷<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>옷    <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  옷  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>    옷<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>옷<span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>옷<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>    옷    <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      옷  <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>        옷<span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span> <br>
+<span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          옷
+<span style='font-family:monospace;background-color:skyblue'>              </span></div>미로 맵 탈출 성공! 
+</pre><br><pre class='selectable'>캐릭터 현재 위치의 줄 번호를 입력하세요: <b><span style='color:rgb(0,0,255);'>1</span></b>
+캐릭터 현재 위치의 칸 번호를 입력하세요: <b><span style='color:rgb(0,0,255);'>5</span></b>
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>              </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>옷<span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>              </span></div>미로 맵 탈출 실패 
+</pre><br>  	 				<h4>알고리즘</h4> 				<div id="card" style='width:1200px;'> 	  				<div id="cardSlots"></div> 	  				<div id="cardPile"></div> 				</div> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body>  </html>  

@@ -1,0 +1,81 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = "1 2 F1b F1e 3 F3b F31 F33 F34 F3b F31 F32 F2b F2e F3e F35 F2b F2e F36 F3b F31 F32 F2b F2e F3e F3e 4"; 		</script> 	</head> 	<body oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li><ul><li><a href='../Jh1i/Jh1i1.html'>합계 Σ 계산</a></li><li><a href='../Jh1i/Jh1i2.html'>factorial 계산</a></li><li><a href='../Jh1i/Jh1i3.html'>10진수 2진수 변환</a></li><li><a href='../Jh1i/Jh1i4.html'>미로 탐색</a></li><li><a href='../Jh1i/Jh1i5.html'>하노이 탑</a></li><ul><li><a href='Jh1i5.html'>코드읽기</a></li><li><a href='Jh1i5s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter21/TowerOfHanoi.java' target='code'>소스코드</a></li></ul></ul></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>하노이 탑에서 출발 기둥에 있는 여러 원반을 도착 기둥으로 모두 옮기는 문제입니다 이를 해결하는 다음 프로그램의 실행순서를 클릭하세요 단, 원반은 한 번에 하나씩만 옮길 수 있고, 작은 원반 위에 더 큰 원반을 옮길 수 없습니다.</pre> 				<pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>2</span></b>
+  1    .    .  
+  2    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    1    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+ ---  ---  ---
+  A    B    C 
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">	public class TowerOfHanoi
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private static int[][] tower = new int[3][10];
+</pre><pre id="code0" class="unselectable codeClass">		private static int[] diskCountPerTower = new int[3];
+</pre><pre id="code0" class="unselectable codeClass">		private static int totalDiskCount;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeF1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F1b')">F1b		private static void initializeTower( int diskCount ) {
+</pre><pre id="code0" class="unselectable codeClass">			totalDiskCount = diskCount;
+</pre><pre id="code0" class="unselectable codeClass">			diskCountPerTower[0] = diskCount;
+</pre><pre id="code0" class="unselectable codeClass">			diskCountPerTower[1] = 0;
+</pre><pre id="code0" class="unselectable codeClass">			diskCountPerTower[2] = 0;
+</pre><pre id="code0" class="unselectable codeClass">			for ( int index = 0; index &lt; diskCount; index++ ) {
+</pre><pre id="code0" class="unselectable codeClass">				tower[0][index] = diskCount - index;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeF1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F1e')">F1e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">		private static void printTower() {
+</pre><pre id="code0" class="unselectable codeClass">			for ( int line = totalDiskCount-1; line &gt;= 0; line-- ) {
+</pre><pre id="code0" class="unselectable codeClass">				for ( int index = 0; index &lt; 3; index++ ) {
+</pre><pre id="code0" class="unselectable codeClass">					if ( tower[index][line] &gt; 0 )
+</pre><pre id="code0" class="unselectable codeClass">						System.out.print( "  " + tower[index][line] + "  " );
+</pre><pre id="code0" class="unselectable codeClass">					else
+</pre><pre id="code0" class="unselectable codeClass">						System.out.print( "  .  " );
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				System.out.println();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			System.out.println(" ---  ---  ---\n  A    B    C \n");
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeF2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F2b')">F2b		private static void moveOneDisk( int from, int to ) {
+</pre><pre id="code0" class="unselectable codeClass">			int top = --diskCountPerTower[from];
+</pre><pre id="code0" class="unselectable codeClass">			int disk = tower[from][top];
+</pre><pre id="code0" class="unselectable codeClass">			tower[from][top] = 0;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">			top = diskCountPerTower[to]++;
+</pre><pre id="code0" class="unselectable codeClass">			tower[to][top] = disk;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">			printTower();
+</pre><pre id="codeF2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F2e')">F2e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeF3b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F3b')">F3b		private static void moveDisks( int diskCount, int from, int temp, int to ) {
+</pre><pre id="codeF31" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F31')">F31			if ( diskCount == 1 )
+</pre><pre id="codeF32" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F32')">F32				moveOneDisk( from, to );
+</pre><pre id="codeF33" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F33')">F33			else {
+</pre><pre id="codeF34" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F34')">F34				moveDisks( diskCount-1, from, to, temp );
+</pre><pre id="codeF35" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F35')">F35				moveOneDisk( from, to );
+</pre><pre id="codeF36" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F36')">F36				moveDisks( diskCount-1, temp, from, to );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeF3e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F3e')">F3e		}
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1		public static void main( String[] args ) {
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in );
+</pre><pre id="code0" class="unselectable codeClass">			System.out.print( "하노이 탑의 원반 개수를 입력하세요(10개 이하) : " );
+</pre><pre id="code0" class="unselectable codeClass">			int diskCount = scan.nextInt();
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2			initializeTower( diskCount );
+</pre><pre id="code0" class="unselectable codeClass">			printTower();
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3			moveDisks( diskCount, 0, 1, 2 );
+</pre><pre id="code0" class="unselectable codeClass">			scan.close();
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('4')">4		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "sP3d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

@@ -1,0 +1,250 @@
+<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0J1f/J2105.js"></script> 	</head> 	<body onkeydown='sP3f4();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li><ul><li><a href='../Jh1i/Jh1i1.html'>합계 Σ 계산</a></li><li><a href='../Jh1i/Jh1i2.html'>factorial 계산</a></li><li><a href='../Jh1i/Jh1i3.html'>10진수 2진수 변환</a></li><li><a href='../Jh1i/Jh1i4.html'>미로 탐색</a></li><li><a href='../Jh1i/Jh1i5.html'>하노이 탑</a></li><ul><li><a href='Jh1i5.html'>코드읽기</a></li><li><a href='Jh1i5s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter21/TowerOfHanoi.java' target='code'>소스코드</a></li></ul></ul></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>하노이 탑에서 출발 기둥에 있는 여러 원반을 도착 기둥으로 모두 옮기는 문제입니다 이를 해결하는 프로그램을 작성하세요 단, 원반은 한 번에 하나씩만 옮길 수 있고, 작은 원반 위에 더 큰 원반을 옮길 수 없습니다.</pre> 				<pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>2</span></b>
+  1    .    .  
+  2    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    1    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+ ---  ---  ---
+  A    B    C 
+</pre><br><pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>3</span></b>
+  1    .    .  
+  2    .    .  
+  3    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    .    .  
+  3    .    1  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  3    2    1  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  3    2    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  .    2    3  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    2    3  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    2  
+  1    .    3  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+  .    .    3  
+ ---  ---  ---
+  A    B    C 
+</pre><br><pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>4</span></b>
+  1    .    .  
+  2    .    .  
+  3    .    .  
+  4    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    .    .  
+  3    .    .  
+  4    1    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  3    .    .  
+  4    1    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  3    .    1  
+  4    .    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    .    1  
+  4    3    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    .    .  
+  4    3    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    2    .  
+  4    3    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  .    2    .  
+  4    3    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  .    2    .  
+  .    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    2    1  
+  .    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    .    1  
+  2    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    .    .  
+  2    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    .    3  
+  2    .    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    .    3  
+  2    1    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    2  
+  .    .    3  
+  .    1    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+  .    .    3  
+  .    .    4  
+ ---  ---  ---
+  A    B    C 
+</pre><br> 	  				<h4>알고리즘 설계</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;하노이 타워의 초기 상태를 설정 <br>&nbsp; &nbsp;3개의 원반을 출발 기둥, 임시 기둥, 도착 기둥을 이용해 이동 <br>프로그램 종료 <br> <br>원반 여러 개를 이동하는 함수 <br>&nbsp; &nbsp;N-1개 원반을 출발 기둥에서 임시 기둥으로 모두 이동 <br>&nbsp; &nbsp;가장 큰 원반을 출발 기둥에서 도착 기둥으로 이동 <br>&nbsp; &nbsp;N-1개 원반을 임시 기둥에서 도착 기둥으로 모두 이동 <br> <br>원반 한 개를 이동하는 함수 <br>&nbsp; &nbsp;출발 기둥의 가장 위에 있는 원반 하나 가져오기 <br>&nbsp; &nbsp;도착 기둥의 가장 위에 원반 놓기 <br>&nbsp; &nbsp;원반 한 개를 이동한 결과 출력 <br></pre> 				<br>&nbsp; &nbsp; &nbsp;  
+<img src='https://shyprogrammer351.github.io/ig3i/C/hanoiTower.jpg' width='500'> <br> &nbsp; 		 				<br> 				<table> 					<tr> 						<td><h4> 프로그램 구현 </h4> </td> 						<td> &nbsp; &nbsp; &nbsp; <input id='btn' type='button' value='실행 순서·상태 점검' onclick='sP3f5();'/><br> &nbsp; </td> 						<td> <pre style='white-space:normal; width:400px;'> ※ 단계별 점검: A키(이전), D키(다음) <br> &nbsp; </pre></td> 					</tr> 				</table> 				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter21/TowerOfHanoi.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	public class TowerOfHanoi
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private static int[][] tower = <a href='../Jf2i/Jf2i0.html' target='keyword'>new</a> int[3 ][10];
+</pre><pre id="code0" class="unselectable codeClass">		private static int[] diskCountPerTower = <a href='../Jf2i/Jf2i0.html' target='keyword'>new</a> int[3];
+</pre><pre id="code0" class="unselectable codeClass">		private static int totalDiskCount;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 하노이 타워의 초기 상태를 설정하는 함수</font>
+</pre>
+<pre id="codeF1b" class="unselectable codeClass">F1b		private static <a href='../Jf1i/Jf1i0.html' target='keyword'>void</a> initializeTower( int diskCount ) {
+</pre><pre id="code0" class="unselectable codeClass">			totalDiskCount = diskCount;
+</pre><pre id="code0" class="unselectable codeClass">			diskCountPerTower[0]= diskCount;
+</pre><pre id="code0" class="unselectable codeClass">			diskCountPerTower[1]= 0;
+</pre><pre id="code0" class="unselectable codeClass">			diskCountPerTower[2]= 0;
+</pre><pre id="code0" class="unselectable codeClass">			for ( int index = 0; index <a href='../Jf4i/Jf4i0.html#2' target='keyword'>&lt;</a> diskCount; index++ ) {
+</pre><pre id="code0" class="unselectable codeClass">				tower[0 ][index]= diskCount - index;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeF1e" class="unselectable codeClass">F1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 하노이 타워의 현재 상태를 출력하는 함수</font>
+</pre><pre id="code0" class="unselectable codeClass">		private static <a href='../Jf1i/Jf1i0.html' target='keyword'>void</a> printTower() {
+</pre><pre id="code0" class="unselectable codeClass">			for ( int line = totalDiskCount-1; line &gt;= 0; line-- ) {
+</pre><pre id="code0" class="unselectable codeClass">				for ( int index = 0; index <a href='../Jf4i/Jf4i0.html#2' target='keyword'>&lt;</a> 3; index++ ) {
+</pre><pre id="code0" class="unselectable codeClass">					<a href='../Jf6i/Jf6i0.html' target='keyword'>if</a> ( tower[index ][line]<a href='../Jf4i/Jf4i0.html#2' target='keyword'>&gt;</a> 0 )
+</pre><pre id="code0" class="unselectable codeClass">						System.out.print( "  " + tower[index ][line]+ "  " );
+</pre><pre id="code0" class="unselectable codeClass">					<a href='../Jf6i/Jf6i0.html' target='keyword'>else</a>
+</pre><pre id="code0" class="unselectable codeClass">						System.out.print( "  .  " );
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				System.out.println();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			<a href='../Jf4i/Jf4i0.html#2' target='keyword'>&gt;</a>(" ---  ---  ---\n  A    B    C \n");
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 원반 한 개를 이동하는 함수 </b></font>
+</pre>
+<pre id="codeF2b" class="unselectable codeClass">F2b		private static void moveOneDisk( int from, int to ) {
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 출발 기둥의 가장 위에 있는 원반 하나 가져오기 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			int top = --diskCountPerTower[from];
+</pre><pre id="code0" class="unselectable codeClass">			int disk = tower[from ][top];
+</pre><pre id="code0" class="unselectable codeClass">			tower[from ][top]= 0;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 도착 기둥의 가장 위에 원반 놓기 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			top = diskCountPerTower[to ]++;
+</pre><pre id="code0" class="unselectable codeClass">			tower[to ][top]= disk;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 원반 한 개를 이동한 결과 출력 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			printTower();
+</pre>
+<pre id="codeF2e" class="unselectable codeClass">F2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 원반 여러 개를 이동하는 함수 </b></font>
+</pre>
+<pre id="codeF3b" class="unselectable codeClass">F3b		private static void moveDisks( int diskCount, int from, int temp, int to ) {
+</pre>
+<pre id="codeF31" class="unselectable codeClass">F31			<a href='../Jf6i/Jf6i0.html' target='keyword'>if</a> ( diskCount == 1 )
+</pre>
+<pre id="codeF32" class="unselectable codeClass">F32				moveOneDisk( from, to );
+</pre>
+<pre id="codeF33" class="unselectable codeClass">F33			<a href='../Jf6i/Jf6i0.html' target='keyword'>else</a> {
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> N-1개 원반을 출발 기둥에서 임시 기둥으로 모두 이동 </b></font>
+</pre>
+<pre id="codeF34" class="unselectable codeClass">F34				moveDisks( diskCount-1, from, to, temp );
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 가장 큰 원반을 출발 기둥에서 도착 기둥으로 이동 </b></font>
+</pre>
+<pre id="codeF35" class="unselectable codeClass">F35				moveOneDisk( from, to );
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> N-1개 원반을 임시 기둥에서 도착 기둥으로 모두 이동 </b></font>
+</pre>
+<pre id="codeF36" class="unselectable codeClass">F36				moveDisks( diskCount-1, temp, from, to );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeF3e" class="unselectable codeClass">F3e		}
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 프로그램 시작 </b></font>
+</pre>
+<pre id="code1" class="unselectable codeClass">1		public static void main( String[] args ) {
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = <a href='../Jf2i/Jf2i0.html' target='keyword'>new</a> Scanner( <a href='../Jf2i/Jf2i0.html' target='keyword'>System.in</a> );
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 하노이 타워의 초기 상태를 설정    </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			System.out.print( "하노이 탑의 원반 개수를 입력하세요(10개 이하) : " );
+</pre><pre id="code0" class="unselectable codeClass">			int diskCount = scan.<a href='../Jf2i/Jf2i0.html' target='keyword'>nextInt</a>();
+</pre>
+<pre id="code2" class="unselectable codeClass">2			initializeTower( diskCount );
+</pre><pre id="code0" class="unselectable codeClass">			printTower();
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 3개의 원반을 출발 기둥, 임시 기둥, 도착 기둥을 이용해 이동 </b></font>
+</pre>
+<pre id="code3" class="unselectable codeClass">3			moveDisks( diskCount, 0, 1, 2 );
+</pre><pre id="code0" class="unselectable codeClass">			scan.close();
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
+</pre>
+<pre id="code4" class="unselectable codeClass">4		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre></div>	 	 				<br><h4>실행 순서 확인</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:110px;width:412px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 

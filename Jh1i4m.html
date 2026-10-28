@@ -1,0 +1,121 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [  							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li><ul><li><a href='../Jh1i/Jh1i1.html'>합계 Σ 계산</a></li><li><a href='../Jh1i/Jh1i2.html'>factorial 계산</a></li><li><a href='../Jh1i/Jh1i3.html'>10진수 2진수 변환</a></li><li><a href='../Jh1i/Jh1i4.html'>미로 탐색</a></li><ul><li><a href='Jh1i4.html'>코드읽기</a></li><li><a href='Jh1i4s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter21/MazeMove.java' target='code'>소스코드</a></li></ul><li><a href='../Jh1i/Jh1i5.html'>하노이 탑</a></li></ul></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>미로를 탐색해서 문을 찾아 탈출하는 문제입니다 이를 해결하는 프로그램의 다음 실행상태에 대해 빈칸을 채우세요 </pre> 				<h4>프로그램의 실행순서 및 실행상태</h4> 				
+<pre style='margin:0;padding:0;'><a href='#1'>1</a>  public static void main( String[] args ) {  </pre><br>
+
+<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>캐릭터 현재 위치의 줄 번호를 입력하세요: 3<br>캐릭터 현재 위치의 칸 번호를 입력하세요: 5<br></pre><br>
+<pre style='margin:0;padding:0;'><a href='#2'>2</a>   if ( move( row, column )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#Fb'>Fb</a>  private static int move( int row, int column ) {  </pre><br>
+<pre style='margin:0;padding:0;'><a href='#F1'>F1</a>   if ( ( row &lt; 0  ) || ( HEIGHT &lt;= row ) || ( column &lt; 0 ) || ( WIDTH &lt;= column ) )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F3'>F3</a>   else if ( map[row][column] == SUCCESS ) {</pre><br>
+
+<pre style='margin:0;padding:0;'><a href='#Fb'>Fb</a>  private static int move( int row, int column ) {  </pre><br>
+<pre style='margin:0;padding:0;'><a href='#F1'>F1</a>   if ( ( row &lt; 0  ) || ( HEIGHT &lt;= row ) || ( column &lt; 0 ) || ( WIDTH &lt;= column ) )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F3'>F3</a>   else if ( map[row][column] == SUCCESS ) {</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F5'>F5</a>   else if ( map[row][column] == NOTVISITED ) {</pre><br>
+
+<pre style='margin:0;padding:0;'><a href='#F1'>F1</a>   if ( ( row &lt; 0  ) || ( HEIGHT &lt;= row ) || ( column &lt; 0 ) || ( WIDTH &lt;= column ) )</pre><br>
+
+<pre style='margin:0;padding:0;'><a href='#Fe'>Fe</a>  }</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F8'>F8</a>                                 == SUCCESS )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F10'>F10</a>    if ( move( row, column + 1 )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#Fb'>Fb</a>  private static int move( int row, int column ) {  </pre><br>
+
+<pre style='margin:0;padding:0;'><a href='#F1'>F1</a>   if ( ( row &lt; 0  ) || ( HEIGHT &lt;= row ) || ( column &lt; 0 ) || ( WIDTH &lt;= column ) )</pre><br>
+
+<pre style='margin:0;padding:0;'><a href='#Fe'>Fe</a>  }</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F11'>F11</a>                                 == SUCCESS )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F12'>F12</a>     return SUCCESS;</pre><br>
+<pre style='margin:0;padding:0;'><a href='#Fe'>Fe</a>  }</pre><br>
+
+<pre style='margin:0;padding:0;'><a href='#F8'>F8</a>                                 == SUCCESS )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#F9'>F9</a>     return SUCCESS;</pre><br>
+<pre style='margin:0;padding:0;'><a href='#Fe'>Fe</a>  }</pre><br>
+<pre style='margin:0;padding:0;'><a href='#3'>3</a>                            == SUCCESS )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#4'>4</a>    System.out.println( "\n미로 맵 탈출 성공!" );</pre>
+<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>미로 맵 탈출 성공!</pre><br>
+<pre style='margin:0;padding:0;'><a href='#7'>7</a>  }</pre><br>
+ 	   				<br><h4>프로그램 코드</h4> 				<pre>	import java.util.Scanner;
+		
+	public class MazeMove
+	{
+		private static int[][] map = {
+		                 { 1, 1, 1, 1, 1, 1, 1 },
+		                 { 1, 0, 0, 0, 1, 0, 1 },
+		                 { 1, 0, 1, 0, 1, 1, 1 },
+		                 { 1, 1, 1, 0, 1, 0, 1 },
+		                 { 1, 0, 0, 0, 0, 0, 2 },
+		                 { 1, 1, 1, 1, 1, 1, 1 }
+		                };
+		private static final int HEIGHT = 6, WIDTH = 7;
+		
+		private static int previousRow = -1, previousColumn = -1;
+		private static void printMap( int row, int column ) {
+			if ( ( row == previousRow ) && ( column == previousColumn ) )
+				return;
+		
+			String[] symbol = { "  ", " \033[44m   \033[0m", " \033[34m문 \033[0m", "  " };
+			for( int i = 0; i &lt; HEIGHT; i++ ) {
+				for( int j = 0; j &lt; WIDTH; j++ ) {
+					if( ( i == row ) && ( j == column ) )
+						System.out.print( "옷" );
+					else
+						System.out.print( symbol[ map[i][j] ] );
+				}
+				System.out.println();
+			}
+		
+			System.out.println();
+			previousRow = row;
+			previousColumn = column;
+		}
+		
+		private static final int SUCCESS = 2;
+		private static final int VISITED = 3;
+		private static final int NOTVISITED = 0;
+		
+<a href='javascript:history.back();' name='Fb'>Fb</a>		private static int move( int row, int column ) {		
+<a href='javascript:history.back();' name='F1'>F1</a>			if ( ( row &lt; 0  ) || ( HEIGHT &lt;= row ) || ( column &lt; 0 ) || ( WIDTH &lt;= column ) )
+<a href='javascript:history.back();' name='F2'>F2</a>				return 0;
+<a href='javascript:history.back();' name='F3'>F3</a>			else if ( map[row][column] == SUCCESS ) {
+				printMap( row, column );
+<a href='javascript:history.back();' name='F4'>F4</a>				return SUCCESS;
+			}
+<a href='javascript:history.back();' name='F5'>F5</a>			else if ( map[row][column] == NOTVISITED ) {
+<a href='javascript:history.back();' name='F6'>F6</a>				map[row][column] = VISITED;
+		
+				printMap( row, column );
+<a href='javascript:history.back();' name='F7'>F7</a>				if ( move( row + 1, column )
+<a href='javascript:history.back();' name='F8'>F8</a>				                             == SUCCESS )
+<a href='javascript:history.back();' name='F9'>F9</a>					return SUCCESS;
+				printMap( row, column );
+<a href='javascript:history.back();' name='F10'>F10</a>				if ( move( row, column + 1 )
+<a href='javascript:history.back();' name='F11'>F11</a>				                             == SUCCESS )
+<a href='javascript:history.back();' name='F12'>F12</a>					return SUCCESS;
+				printMap( row, column );
+<a href='javascript:history.back();' name='F13'>F13</a>				if ( move( row - 1, column )
+<a href='javascript:history.back();' name='F14'>F14</a>				                             == SUCCESS )
+<a href='javascript:history.back();' name='F15'>F15</a>					return SUCCESS;
+				printMap( row, column );
+<a href='javascript:history.back();' name='F16'>F16</a>				if ( move( row, column - 1 )
+<a href='javascript:history.back();' name='F17'>F17</a>				                             == SUCCESS )
+<a href='javascript:history.back();' name='F18'>F18</a>					return SUCCESS;
+				printMap( row, column );
+			}
+		
+<a href='javascript:history.back();' name='F19'>F19</a>			return 0;
+<a href='javascript:history.back();' name='Fe'>Fe</a>		}
+<a href='javascript:history.back();' name='1'>1</a>		public static void main( String[] args ) { 	
+			Scanner scan = new Scanner( System.in );
+			System.out.print( "캐릭터 현재 위치의 줄 번호를 입력하세요: " );
+			int row = scan.nextInt();
+			System.out.print( "캐릭터 현재 위치의 칸 번호를 입력하세요: " );
+			int column = scan.nextInt();
+		
+<a href='javascript:history.back();' name='2'>2</a>			if ( move( row, column )
+<a href='javascript:history.back();' name='3'>3</a>			                         == SUCCESS )
+<a href='javascript:history.back();' name='4'>4</a>				System.out.println( "\n미로 맵 탈출 성공!" );
+<a href='javascript:history.back();' name='5'>5</a>			else
+<a href='javascript:history.back();' name='6'>6</a>				System.out.println( "\n미로 맵 탈출 실패" );
+			scan.close();
+<a href='javascript:history.back();' name='7'>7</a>		}
+	}
+	</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 

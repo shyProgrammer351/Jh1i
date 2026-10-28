@@ -1,0 +1,217 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "int","Integer" ], [ "new" ], [ "int","Integer" ], [ "int","Integer" ], [ "new" ], [ "int","Integer" ], [ "int","Integer" ], [ "void" ], [ "int","Integer" ], [ "for" ], [ "int","Integer" ], [ "<" ], [ "++" ], [ "void" ], [ "for" ], [ "int","Integer" ], [ ">=" ], [ "--" ], [ "for" ], [ "int","Integer" ], [ "<" ], [ "++" ], [ "if" ], [ ">" ], [ "else" ], [ ">" ], [ "int","Integer" ], [ "--" ], [ "from" ], [ "int","Integer" ], [ "from" ], [ "from" ], [ "to" ], [ "++" ], [ "to" ], [ "if" ], [ "==" ], [ "moveOneDisk" ], [ "from" ], [ "to" ], [ "else" ], [ "moveDisks" ], [ "from" ], [ "to" ], [ "temp" ], [ "moveOneDisk" ], [ "from" ], [ "to" ], [ "moveDisks" ], [ "temp" ], [ "from" ], [ "to" ], [ "new" ], [ "System.in" ], [ "int","Integer" ], [ "nextInt" ], [ "moveDisks" ], [ "close" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li><ul><li><a href='../Jh1i/Jh1i1.html'>합계 Σ 계산</a></li><li><a href='../Jh1i/Jh1i2.html'>factorial 계산</a></li><li><a href='../Jh1i/Jh1i3.html'>10진수 2진수 변환</a></li><li><a href='../Jh1i/Jh1i4.html'>미로 탐색</a></li><li><a href='../Jh1i/Jh1i5.html'>하노이 탑</a></li><ul><li><a href='Jh1i5.html'>코드읽기</a></li><li><a href='Jh1i5s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter21/TowerOfHanoi.java' target='code'>소스코드</a></li></ul></ul></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>하노이 탑에서 출발 기둥에 있는 여러 원반을 도착 기둥으로 모두 옮기는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 단, 원반은 한 번에 하나씩만 옮길 수 있고, 작은 원반 위에 더 큰 원반을 옮길 수 없습니다.</pre> 				<pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>2</span></b>
+  1    .    .  
+  2    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    1    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+ ---  ---  ---
+  A    B    C 
+</pre><br><pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>3</span></b>
+  1    .    .  
+  2    .    .  
+  3    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    .    .  
+  3    .    1  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  3    2    1  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  3    2    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  .    2    3  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    2    3  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    2  
+  1    .    3  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+  .    .    3  
+ ---  ---  ---
+  A    B    C 
+</pre><br><pre class='selectable'>하노이 탑의 원반 개수를 입력하세요(10개 이하) : <b><span style='color:rgb(0,0,255);'>4</span></b>
+  1    .    .  
+  2    .    .  
+  3    .    .  
+  4    .    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  2    .    .  
+  3    .    .  
+  4    1    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  3    .    .  
+  4    1    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  3    .    1  
+  4    .    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    .    1  
+  4    3    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    .    .  
+  4    3    2  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    2    .  
+  4    3    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  .    2    .  
+  4    3    .  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    1    .  
+  .    2    .  
+  .    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    2    1  
+  .    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    .    1  
+  2    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    .    .  
+  2    3    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  1    .    3  
+  2    .    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    .  
+  .    .    3  
+  2    1    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    .  
+  .    .    2  
+  .    .    3  
+  .    1    4  
+ ---  ---  ---
+  A    B    C 
+  .    .    1  
+  .    .    2  
+  .    .    3  
+  .    .    4  
+ ---  ---  ---
+  A    B    C 
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import java.util.Scanner;  
+	  
+public class TowerOfHanoi  
+{  
+	private static <input id='blank0' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(0)'>[][] tower = <input id='blank1' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(1)'> <input id='blank2' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(2)'>[3 ][10];  
+	private static <input id='blank3' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(3)'>[] diskCountPerTower = <input id='blank4' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(4)'> <input id='blank5' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(5)'>[3];  
+	private static <input id='blank6' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(6)'> totalDiskCount;  
+	  
+	private static <input id='blank7' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(7)'> initializeTower( <input id='blank8' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(8)'> diskCount ) {  
+		totalDiskCount = diskCount;  
+		diskCountPerTower[0]= diskCount;  
+		diskCountPerTower[1]= 0;  
+		diskCountPerTower[2]= 0;  
+		<input id='blank9' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(9)'> ( <input id='blank10' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(10)'> index = 0; index <input id='blank11' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='1' onchange='sP3f6(11)'> diskCount; index<input id='blank12' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(12)'> ) {  
+			tower[0 ][index]= diskCount - index;  
+		}  
+	}  
+	  
+	private static <input id='blank13' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(13)'> printTower() {  
+		<input id='blank14' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(14)'> ( <input id='blank15' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(15)'> line = totalDiskCount-1; line <input id='blank16' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(16)'> 0; line<input id='blank17' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(17)'> ) {  
+			<input id='blank18' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(18)'> ( <input id='blank19' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(19)'> index = 0; index <input id='blank20' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='1' onchange='sP3f6(20)'> 3; index<input id='blank21' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(21)'> ) {  
+				<input id='blank22' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(22)'> ( tower[index ][line]<input id='blank23' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='1' onchange='sP3f6(23)'> 0 )  
+					System.out.print( "  " + tower[index ][line]+ "  " );  
+				<input id='blank24' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(24)'>  
+					System.out.print( "  .  " );  
+			}  
+			System.out.println();  
+		}  
+		<input id='blank25' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='1' onchange='sP3f6(25)'>(" ---  ---  ---\n  A    B    C \n"); 
+	}  
+	  
+	private static void moveOneDisk( int from, int to ) { 
+		<input id='blank26' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(26)'> top = <input id='blank27' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(27)'>diskCountPerTower[<input id='blank28' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(28)'>];  
+		<input id='blank29' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(29)'> disk = tower[<input id='blank30' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(30)'> ][top];  
+		tower[<input id='blank31' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(31)'> ][top]= 0;  
+	  
+		top = diskCountPerTower[<input id='blank32' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(32)'> ]<input id='blank33' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(33)'>;  
+		tower[<input id='blank34' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(34)'> ][top]= disk;  
+	  
+		printTower();  
+	}  
+	  
+	private static void moveDisks( int diskCount, int from, int temp, int to ) { 
+		<input id='blank35' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(35)'> ( diskCount <input id='blank36' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(36)'> 1 )  
+			<input id='blank37' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='11' onchange='sP3f6(37)'>( <input id='blank38' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(38)'>, <input id='blank39' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(39)'> );  
+		<input id='blank40' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(40)'> {  
+			<input id='blank41' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='9' onchange='sP3f6(41)'>( diskCount-1, <input id='blank42' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(42)'>, <input id='blank43' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(43)'>, <input id='blank44' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(44)'> );  
+			<input id='blank45' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='11' onchange='sP3f6(45)'>( <input id='blank46' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(46)'>, <input id='blank47' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(47)'> );  
+			<input id='blank48' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='9' onchange='sP3f6(48)'>( diskCount-1, <input id='blank49' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(49)'>, <input id='blank50' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(50)'>, <input id='blank51' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(51)'> );  
+		}  
+	}  
+	public static void main( String[] args ) { 
+		Scanner scan = <input id='blank52' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(52)'> Scanner( <input id='blank53' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='9' onchange='sP3f6(53)'> );  
+		System.out.print( "하노이 탑의 원반 개수를 입력하세요(10개 이하) : " );  
+		<input id='blank54' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(54)'> diskCount = scan.<input id='blank55' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='7' onchange='sP3f6(55)'>();  
+		initializeTower( diskCount );  
+		printTower();  
+	  
+		<input id='blank56' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='9' onchange='sP3f6(56)'>( diskCount, 0, 1, 2 );  
+		scan.<input id='blank57' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(57)'>();  
+	}  
+} 	 			</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 
